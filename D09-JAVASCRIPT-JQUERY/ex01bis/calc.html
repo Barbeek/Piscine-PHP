@@ -1,0 +1,112 @@
+<html lang="en">
+    <head>
+        <title>Calculatrice</title>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            div.container{
+		        width: 90vw;
+		        height: auto;
+	        }
+            h3{
+                text-align: center;
+                color: rgb(194, 131, 194);
+            }
+	        div.calc{       
+		        margin: 10% 30% 30% 30%;
+		        padding: 100px;
+		        background-color: lightGrey;
+                position: relative;
+	        }
+        </style>
+	<script>
+	var	left;
+	var right;
+	var op;
+	var calc;
+	
+	$(document).ready(function ()
+	{
+		left = $('#left');
+		right = $('#right');
+		operator = $('#operator');
+        calc = $('#calc')
+		calc.submit(calculate);
+		window.setInterval(sendAlert, 30000);
+    });
+    
+	function checkVal(left, right)
+	{
+		if (left >= 0 && right >= 0)	
+			return true;
+		return false;
+    }
+    
+	function calculate()
+	{
+		event.preventDefault();	
+		var l = Number(left.val());
+		var r = Number(right.val());
+		if (!checkVal(l, r))
+		{
+			alert('Error :(');
+			return ;
+		}
+		switch (operator.val())
+		{
+			case ("add"):
+				show(l + r);
+				break;
+			case ("min"):
+				show(l - r);
+				break;
+			case ("mult"):
+				show(l * r);
+				break;
+			case ("div"):
+				if (r == 0)
+					show("It’s over 9000!");
+				else
+				  	show(l / r);
+				break;
+			case ("mod"):
+				if (r == 0)
+					show("It’s over 9000!");
+				else
+				  	show(l % r);
+				break;
+		}
+	}
+	
+	function show(res)
+	{
+		alert(res);
+		console.log(res);
+    }
+    
+	function sendAlert()
+	{
+		alert('Please, use me...');
+	}
+	</script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="calc">
+                <form action="" id="calc">
+                <h3>Let's do the math</h3>
+                    <input type="text" id="left" value="">
+                    <select id="operator">
+                        <option value="add">+</option>
+                        <option value="sub">-</option>
+                        <option value="mult">*</option>
+                        <option value="div">/</option>
+                        <option value="mod">%</option>
+                    </select>
+                    <input type="text" id="right" value="">
+                    <input type="submit" value="Try me!"> 
+                    </form>     
+            </div>
+        </div>
+    </body>
+</html>

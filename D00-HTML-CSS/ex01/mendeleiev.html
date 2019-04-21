@@ -1,0 +1,261 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tableau Périodique des éléments - Dimitri Mendeleïev</title>
+        <style>
+            table
+            {
+                width: 100%;
+                height: 70%;
+                border-collapse: collapse;
+            }
+            td, th
+            {
+                text-align: center;
+                position: relative;
+                height: 10%;
+                width: 2%;
+            }
+            h1{
+                text-align: center;
+                color: white;
+                font-size: 2vw;
+            }
+            h2
+            {
+                margin: 0;
+                font-size: 1vw;
+                overflow: hidden;
+            }
+            .num
+            {
+                position: absolute;
+                text-align: left;
+                margin: 2%;
+                bottom: 0;
+
+            }
+            .masse
+            {
+                position: absolute;
+                text-align: right;
+                margin: 2%;
+                top: 0;
+                right: 0;
+            }
+            .no_border
+            {
+                height: 10%;
+                width: 10%;
+                border: none;
+            }
+            td p
+            {
+                font-size: 1vw;
+                width: 100%;
+                max-height: 100%;
+                overflow: hidden;
+            }
+            .non_metal{
+                background-color: #99ffcc;
+                box-shadow: 0 0 5px #00994d; 
+            }
+            .gaz_noble{
+                background-color: #99ccff;
+                box-shadow: 0 0 5px #0066ff;
+            }
+            .alcalin{
+                background-color: #ff6666;
+                box-shadow: 0 0 5px #990000;    
+            }
+            .terreux{
+                background-color: #ffcc66;
+                box-shadow: 0 0 5px #4d3300;
+            }
+            .lanthanide{
+                background-color: #ffcccc;
+                box-shadow:0 0 5px #ff4d4d;
+            }
+            .actinide{
+                background-color: #ffccff;
+                box-shadow:0 0 5px #cc00cc;
+            }
+            .transition{
+                background-color: #ccff99;
+                box-shadow:0 0 5px #264d00;
+            }
+            .poor{
+                background-color: #dada60;
+                box-shadow:0 0 5px #505039;
+            }
+            .metalloide{
+                background-color: #7a9966;
+                box-shadow:0 0 5px #293d3d;
+            }
+            .hallogene{
+                background-color: #cccc00;
+                box-shadow:0 0 5px #663d00;
+            }
+            .none{
+                background-color: bisque;
+                box-shadow: 0 0 5px grey; 
+            }
+           body{
+                background-image: url(https://vignette.wikia.nocookie.net/yandere-simulator/images/f/f1/Galaxy-Background.jpg/revision/latest?cb=20161008081810);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <h1 >Le tableau de Mendeleïev</h1>
+        <table> 
+            <tr>
+                <td class="non_metal"><p class="masse" contenteditable="true">1</p><h2 contenteditable="true">H</h2><p class="num" contenteditable="true">1</p></td>
+                <td colspan="16" class="no_border"></td>
+                <td class="gaz_noble"><p class="masse" contenteditable="true">4</p><h2 contenteditable="true">He</h2><p class="num" contenteditable="true">2</p></td>
+            </tr>
+            <tr>
+                <td class="alcalin"><p class="masse" contenteditable="true">7</p><h2 contenteditable="true">Li</h2><p class="num" contenteditable="true">3</p></td>
+                <td class="terreux"><p class="masse" contenteditable="true">9</p><h2 contenteditable="true">Be</h2><p class="num" contenteditable="true">4</p></td>
+                <td colspan="10" class="no_border"></td>
+                <td class="metalloide"><p class="masse" contenteditable="true">10</p><h2 contenteditable="true">B</h2><p class="num" contenteditable="true">5</p></td>
+                <td class="non_metal"><p class="masse" contenteditable="true">12</p><h2 contenteditable="true">C</h2><p class="num" contenteditable="true">6</p></td>
+                <td class="non_metal"><p class="masse" contenteditable="true">14</p><h2 contenteditable="true">N</h2><p class="num" contenteditable="true">7</p></td>
+                <td class="non_metal"><p class="masse" contenteditable="true">16</p><h2 contenteditable="true">O</h2><p class="num" contenteditable="true">8</p></td>
+                <td class="hallogene"><p class="masse" contenteditable="true">19</p><h2 contenteditable="true">F</h2><p class="num" contenteditable="true">9</p></td>
+                <td class="gaz_noble"><p class="masse" contenteditable="true">20</p><h2 contenteditable="true">Ne</h2><p class="num" contenteditable="true">10</p></td>
+            </tr>
+            <tr>
+                <td class="alcalin"><p class="masse" contenteditable="true">23</p><h2 contenteditable="true">Na</h2><p class="num" contenteditable="true">11</p></td>
+                <td class="terreux"><p class="masse" contenteditable="true">24</p><h2 contenteditable="true">Mg</h2><p class="num" contenteditable="true">12</p></td>
+                <td colspan="10" class="no_border"></td>
+                <td class="poor"><p class="masse" contenteditable="true">27</p><h2 contenteditable="true">Al</h2><p class="num" contenteditable="true">13</p></td>
+                <td class="metalloide"><p class="masse" contenteditable="true">28</p><h2 contenteditable="true">Si</h2><p class="num" contenteditable="true">14</p></td>
+                <td class="non_metal"><p class="masse" contenteditable="true">31</p><h2 contenteditable="true">P</h2><p class="num" contenteditable="true">15</p></td>
+                <td class="non_metal"><p class="masse" contenteditable="true">32</p><h2 contenteditable="true">S</h2><p class="num" contenteditable="true">16</p></td>
+                <td class="hallogene"><p class="masse" contenteditable="true">35</p><h2 contenteditable="true">Cl</h2><p class="num" contenteditable="true">17</p></td>
+                <td class="gaz_noble"><p class="masse" contenteditable="true">40</p><h2 contenteditable="true">Ar</h2><p class="num" contenteditable="true">18</p></td>
+            </tr>
+            <tr>
+                <td class="alcalin"><p class="masse" contenteditable="true">39</p><h2 contenteditable="true">K</h2><p class="num" contenteditable="true">19</p></td>
+                <td class="terreux"><p class="masse" contenteditable="true">40</p><h2 contenteditable="true">Ca</h2><p class="num" contenteditable="true">20</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">47</p><h2 contenteditable="true">Sc</h2><p class="num" contenteditable="true">21</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">48</p><h2 contenteditable="true">Ti</h2><p class="num" contenteditable="true">22</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">51</p><h2 contenteditable="true">V</h2><p class="num" contenteditable="true">23</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">52</p><h2 contenteditable="true">Cr</h2><p class="num" contenteditable="true">24</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">55</p><h2 contenteditable="true">Mn</h2><p class="num" contenteditable="true">25</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">56</p><h2 contenteditable="true">Fe</h2><p class="num" contenteditable="true">26</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">59</p><h2 contenteditable="true">Co</h2><p class="num" contenteditable="true">27</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">59</p><h2 contenteditable="true">Ni</h2><p class="num" contenteditable="true">28</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">63</p><h2 contenteditable="true">Cu</h2><p class="num" contenteditable="true">29</p></td>
+                <td class="poor"><p class="masse" contenteditable="true">65</p><h2 contenteditable="true">Zn</h2><p class="num" contenteditable="true">30</p></td>
+                <td class="poor"><p class="masse" contenteditable="true">70</p><h2 contenteditable="true">Ga</h2><p class="num" contenteditable="true">31</p></td>
+                <td class="metalloide"><p class="masse" contenteditable="true">73</p><h2 contenteditable="true">Ge</h2><p class="num" contenteditable="true">32</p></td>
+                <td class="metalloide"><p class="masse" contenteditable="true">75</p><h2 contenteditable="true">As</h2><p class="num" contenteditable="true">33</p></td>
+                <td class="non_metal"><p class="masse" contenteditable="true">79</p><h2 contenteditable="true">Se</h2><p class="num" contenteditable="true">34</p></td>
+                <td class="hallogene"><p class="masse" contenteditable="true">80</p><h2 contenteditable="true">Br</h2><p class="num" contenteditable="true">35</p></td>
+                <td class="gaz_noble"><p class="masse" contenteditable="true">84</p><h2 contenteditable="true">Kr</h2><p class="num" contenteditable="true">36</p></td>
+            </tr>
+            <tr>
+                <td class="alcalin"><p class="masse" contenteditable="true">85</p><h2 contenteditable="true">Rb</h2><p class="num" contenteditable="true">37</p></td>
+                <td class="terreux"><p class="masse" contenteditable="true">88</p><h2 contenteditable="true">Sr</h2><p class="num" contenteditable="true">38</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">89</p><h2 contenteditable="true">Y</h2><p class="num" contenteditable="true">39</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">91</p><h2 contenteditable="true">Zr</h2><p class="num" contenteditable="true">40</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">93</p><h2 contenteditable="true">Nb</h2><p class="num" contenteditable="true">41</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">96</p><h2 contenteditable="true">Mo</h2><p class="num" contenteditable="true">42</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">98</p><h2 contenteditable="true">Tc</h2><p class="num" contenteditable="true">43</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">101</p><h2 contenteditable="true">Ru</h2><p class="num" contenteditable="true">44</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">103</p><h2 contenteditable="true">Rh</h2><p class="num" contenteditable="true">45</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">106</p><h2 contenteditable="true">Pd</h2><p class="num" contenteditable="true">46</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">108</p><h2 contenteditable="true">Ag</h2><p class="num" contenteditable="true">47</p></td>
+                <td class="poor"><p class="masse" contenteditable="true">112</p><h2 contenteditable="true">Cd</h2><p class="num" contenteditable="true">48</p></td>
+                <td class="poor"><p class="masse" contenteditable="true">115</p><h2 contenteditable="true">In</h2><p class="num" contenteditable="true">49</p></td>
+                <td class="poor"><p class="masse" contenteditable="true">119</p><h2 contenteditable="true">Sn</h2><p class="num" contenteditable="true">50</p></td>
+                <td class="metalloide"><p class="masse" contenteditable="true">122</p><h2 contenteditable="true">Sb</h2><p class="num" contenteditable="true">51</p></td>
+                <td class="metalloide"><p class="masse" contenteditable="true">128</p><h2 contenteditable="true">Te</h2><p class="num" contenteditable="true">52</p></td>
+                <td class="hallogene"><p class="masse" contenteditable="true">127</p><h2 contenteditable="true">I</h2><p class="num" contenteditable="true">53</p></td>
+                <td class="gaz_noble"><p class="masse" contenteditable="true">131</p><h2 contenteditable="true">Xe</h2><p class="num" contenteditable="true">54</p></td>
+            </tr>
+            <tr>
+                <td class="alcalin"><p class="masse" contenteditable="true">133</p><h2 contenteditable="true">Cs</h2><p class="num" contenteditable="true">55</p></td>
+                <td class="terreux"><p class="masse" contenteditable="true">137</p><h2 contenteditable="true">Ba</h2><p class="num" contenteditable="true">56</p></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true"></p><h2 contenteditable="true">lanthanide</h2><p class="num" contenteditable="true">57 - 71</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">178</p><h2 contenteditable="true">Hf</h2><p class="num" contenteditable="true">72</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">181</p><h2 contenteditable="true">Ta</h2><p class="num" contenteditable="true">73</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">184</p><h2 contenteditable="true">W</h2><p class="num" contenteditable="true">74</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">186</p><h2 contenteditable="true">Re</h2><p class="num" contenteditable="true">75</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">190</p><h2 contenteditable="true">Os</h2><p class="num" contenteditable="true">76</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">192</p><h2 contenteditable="true">Ir</h2><p class="num" contenteditable="true">77</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">195</p><h2 contenteditable="true">Pt</h2><p class="num" contenteditable="true">78</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">197</p><h2 contenteditable="true">Au</h2><p class="num" contenteditable="true">79</p></td>
+                <td class="poor"><p class="masse" contenteditable="true">201</p><h2 contenteditable="true">Hg</h2><p class="num" contenteditable="true">80</p></td>
+                <td class="poor"><p class="masse" contenteditable="true">204</p><h2 contenteditable="true">Tl</h2><p class="num" contenteditable="true">81</p></td>
+                <td class="poor"><p class="masse" contenteditable="true">207</p><h2 contenteditable="true">Pb</h2><p class="num" contenteditable="true">82</p></td>
+                <td class="poor"><p class="masse" contenteditable="true">209</p><h2 contenteditable="true">Bi</h2><p class="num" contenteditable="true">83</p></td>
+                <td class="metalloide"><p class="masse" contenteditable="true">209</p><h2 contenteditable="true">Po</h2><p class="num" contenteditable="true">84</p></td>
+                <td class="hallogene"><p class="masse" contenteditable="true">210</p><h2 contenteditable="true">At</h2><p class="num" contenteditable="true">85</p></td>
+                <td class="gaz_noble"><p class="masse" contenteditable="true">222</p><h2 contenteditable="true">Rn</h2><p class="num" contenteditable="true">86</p></td>
+            </tr>
+            <tr>
+                <td class="alcalin"><p class="masse" contenteditable="true">223</p><h2 contenteditable="true">Fr</h2><p class="num" contenteditable="true">87</p></td>
+                <td class="terreux"><p class="masse" contenteditable="true">226</p><h2 contenteditable="true">Ra</h2><p class="num" contenteditable="true">88</p></td>
+                <td class="actinide"><p class="masse" contenteditable="true"></p><h2 contenteditable="true">actinide</h2><p class="num" contenteditable="true">89-103</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">263</p><h2 contenteditable="true">Rf</h2><p class="num" contenteditable="true">104</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">262</p><h2 contenteditable="true">Db</h2><p class="num" contenteditable="true">105</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">266</p><h2 contenteditable="true">Sg</h2><p class="num" contenteditable="true">106</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">264</p><h2 contenteditable="true">Bh</h2><p class="num" contenteditable="true">107</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">270</p><h2 contenteditable="true">Hs</h2><p class="num" contenteditable="true">108</p></td>
+                <td class="none"><p class="masse" contenteditable="true">268</p><h2 contenteditable="true">Mt</h2><p class="num" contenteditable="true">109</p></td>
+                <td class="none"><p class="masse" contenteditable="true">272</p><h2 contenteditable="true">Ds</h2><p class="num" contenteditable="true">110</p></td>
+                <td class="none"><p class="masse" contenteditable="true">272</p><h2 contenteditable="true">Rg</h2><p class="num" contenteditable="true">111</p></td>
+                <td class="transition"><p class="masse" contenteditable="true">277</p><h2 contenteditable="true">Cn</h2><p class="num" contenteditable="true">112</p></td>
+                <td class="none"><p class="masse" contenteditable="true">284</p><h2 contenteditable="true">Uut</h2><p class="num" contenteditable="true">113</p></td>
+                <td class="none"><p class="masse" contenteditable="true">289</p><h2 contenteditable="true">Fl</h2><p class="num" contenteditable="true">114</p></td>
+                <td class="none"><p class="masse" contenteditable="true">288</p><h2 contenteditable="true">Uup</h2><p class="num" contenteditable="true">115</p></td>
+                <td class="none"><p class="masse" contenteditable="true">292</p><h2 contenteditable="true">Lv</h2><p class="num" contenteditable="true">116</p></td>
+                <td class="none"><p class="masse" contenteditable="true">292</p><h2 contenteditable="true">Uus</h2><p class="num" contenteditable="true">117</p></td>
+                <td class="none"><p class="masse" contenteditable="true">294</p><h2 contenteditable="true">Uuo</h2><p class="num" contenteditable="true">118</p></td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td colspan="3" class="no_border"></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true">139</p><h2 contenteditable="true">La</h2><p class="num" contenteditable="true">57</p></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true">140</p><h2 contenteditable="true">Ce</h2><p class="num" contenteditable="true">58</p></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true">141</p><h2 contenteditable="true">Pr</h2><p class="num" contenteditable="true">59</p></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true">144</p><h2 contenteditable="true">Nd</h2><p class="num" contenteditable="true">60</p></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true">145</p><h2 contenteditable="true">Pm</h2><p class="num" contenteditable="true">61</p></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true">150</p><h2 contenteditable="true">Sm</h2><p class="num" contenteditable="true">62</p></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true">152</p><h2 contenteditable="true">Eu</h2><p class="num" contenteditable="true">63</p></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true">157</p><h2 contenteditable="true">Gd</h2><p class="num" contenteditable="true">64</p></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true">159</p><h2 contenteditable="true">Tb</h2><p class="num" contenteditable="true">65</p></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true">162</p><h2 contenteditable="true">Dy</h2><p class="num" contenteditable="true">66</p></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true">165</p><h2 contenteditable="true">Ho</h2><p class="num" contenteditable="true">67</p></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true">167</p><h2 contenteditable="true">Er</h2><p class="num" contenteditable="true">68</p></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true">169</p><h2 contenteditable="true">Tm</h2><p class="num" contenteditable="true">69</p></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true">173</p><h2 contenteditable="true">Yb</h2><p class="num" contenteditable="true">70</p></td>
+                <td class="lanthanide"><p class="masse" contenteditable="true">175</p><h2 contenteditable="true">Lu</h2><p class="num" contenteditable="true">71</p></td> 
+            </tr>
+            <tr>
+                <td colspan="3" class="no_border"></td>
+                <td class="actinide"><p class="masse" contenteditable="true">227</p><h2 contenteditable="true">Ac</h2><p class="num" contenteditable="true">89</p></td>
+                <td class="actinide"><p class="masse" contenteditable="true">232</p><h2 contenteditable="true">Th</h2><p class="num" contenteditable="true">90</p></td>
+                <td class="actinide"><p class="masse" contenteditable="true">231</p><h2 contenteditable="true">Pa</h2><p class="num" contenteditable="true">91</p></td>
+                <td class="actinide"><p class="masse" contenteditable="true">238</p><h2 contenteditable="true">U</h2><p class="num" contenteditable="true">92</p></td>
+                <td class="actinide"><p class="masse" contenteditable="true">237</p><h2 contenteditable="true">Np</h2><p class="num" contenteditable="true">93</p></td>
+                <td class="actinide"><p class="masse" contenteditable="true">244</p><h2 contenteditable="true">Pu</h2><p class="num" contenteditable="true">94</p></td>
+                <td class="actinide"><p class="masse" contenteditable="true">243</p><h2 contenteditable="true">Am</h2><p class="num" contenteditable="true">95</p></td>
+                <td class="actinide"><p class="masse" contenteditable="true">247</p><h2 contenteditable="true">Cm</h2><p class="num" contenteditable="true">96</p></td>
+                <td class="actinide"><p class="masse" contenteditable="true">247</p><h2 contenteditable="true">Bk</h2><p class="num" contenteditable="true">97</p></td>
+                <td class="actinide"><p class="masse" contenteditable="true">251</p><h2 contenteditable="true">Cf</h2><p class="num" contenteditable="true">98</p></td>
+                <td class="actinide"><p class="masse" contenteditable="true">252</p><h2 contenteditable="true">Es</h2><p class="num" contenteditable="true">99</p></td>
+                <td class="actinide"><p class="masse" contenteditable="true">257</p><h2 contenteditable="true">Fm</h2><p class="num" contenteditable="true">100</p></td>
+                <td class="actinide"><p class="masse" contenteditable="true">258</p><h2 contenteditable="true">Md</h2><p class="num" contenteditable="true">101</p></td>
+                <td class="actinide"><p class="masse" contenteditable="true">259</p><h2 contenteditable="true">No</h2><p class="num" contenteditable="true">102</p></td>
+                <td class="actinide"><p class="masse" contenteditable="true">262</p><h2 contenteditable="true">Lr</h2><p class="num" contenteditable="true">103</p></td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>

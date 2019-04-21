@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Balloon</title>
+        <style>
+        div.balloon{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            margin: 500px auto;
+        }
+        </style>
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var balloon;
+        var color = {0: '#FF0000', 1:'#008000', 2:'#0000FF'};
+        var index = 0;
+        var size = 200;
+
+        $(document).ready(function(){
+			balloon = $('#rond');
+			balloon.click(onclick);
+			balloon.mouseleave(onleave);
+        });
+        
+        function onclick(){
+            size += 10;
+            if (size > 420){
+                index = 0;
+                size = 200;
+            }
+            index++;
+            if (index > 2)
+                index = 0;
+            update_balloon();
+        }
+
+        function onleave(){
+            if (size > 200)
+                size -= 5;
+            index--;
+            if (index < 0)
+                index = 2;
+            update_balloon();
+        }
+
+        function update_balloon(){
+            balloon.css('width', size);
+            balloon.css('height', size);
+            balloon.css('backgroundColor', color[index]);
+        }
+    </script>
+    <body>
+        <div class="container">
+            <div class="balloon" id="rond"></div>     
+        </div>
+    </body>
+</html>

@@ -1,0 +1,187 @@
+body{
+    background-color: rgb(71, 71, 71);
+}
+.wrapper{
+    padding-top: 1%;
+    height: 5vh;
+    width: 70vw;
+    position: relative;
+    left: 12%;
+    margin: 0;
+}
+header{
+    background-color: #909090;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    height: 10vh;
+    width: 75vw;
+}
+header img{
+    padding-left: 1%;
+    margin: 0;
+    height: 12vh;
+    width: 25vw;
+    object-fit: contain;
+}
+.radius{
+    border-radius: 10px;
+}
+.shadow{
+    box-shadow: 10px 10px 10px black;
+}
+.top_right{
+    float: right;
+    position: relative;
+    width: 18vw;
+}
+.loupe{
+    width: 13vw;
+    height: 15vh;
+    padding-left: 13%;
+}
+.reload{
+    float: right;
+    height: 3vh;
+    width: 1.5vw;
+    padding-right: 5%;
+}
+.close{
+    float: right;
+    position: absolute;
+    height: 3vh;
+    width: 1.5vw;
+    right: 5%;
+    top: 55%;
+}
+.middle{
+    margin-top: 2%;
+    width: 100%;
+    padding-left: 3%;
+}
+.left_column{
+    background-color: #909090;
+    width: 8vw;
+    height: 40vh;
+    position: absolute;
+}
+.arrow{
+    width: 3vw;
+    position: absolute;
+    top: 3%;
+    left: 25%;
+}
+.main{
+    width: 3vw;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+.oeil{
+    width: 3vw;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.outil{
+    width: 3vw;
+    position: absolute;
+    bottom: 25%;
+    left: 25%;
+}
+.chat{
+    width: 3vw;
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+}
+.room{
+    background-color: #909090;
+    width: 50vw;
+    height: 57vh;
+    position: absolute;
+    left: 18%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.room img{
+    margin: 0;
+    width: 48vw;
+    height: 54vh;
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+}
+.room #ikea{
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    width: 15%;
+    height: 35%;
+}
+.room #apple{
+    position: absolute;
+    top: 55%;
+    right: 3%;
+    width: 20%;
+    height: 30%;
+}
+.right_column{
+    background-color: #909090;
+    width: 8vw;
+    height: 40vh;
+    position: absolute;
+    right: -5%;
+}
+.book{
+    width: 4vw;
+    position: absolute;
+    top: 7%;
+    left: 25%;
+}
+.towel{
+    width: 4vw;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+.brick{
+    background: repeat url('ressources/brick.jpg');
+    width: 70%;
+    height: 20%;
+    position: absolute;
+    bottom: 28%;
+    left: 15%;
+}
+.green_box{
+    background-color: rgb(166,251,150);
+    width: 35%;
+    height: 220%;
+    position: absolute;
+    top: 70vh;
+    font-family: Times;
+    padding-left: 1em;
+}
+.green_box p{
+    margin: 0;
+    font-size: 1vw;
+}
+.bold{
+    font-size: 2vw;
+}
+.shad{
+    text-shadow: 4px 5px 5px red;
+}
+.italic{
+    font-family: sans-serif;
+    font-size: 1vh;
+    font-style: italic;
+}
+.bar{
+    width: 18vw;
+}
+.case{
+    width: 4vw;
+    border: medium none;
+ }

@@ -1,0 +1,98 @@
+<html lang="en">
+    <head>
+        <title>Calculatrice</title>
+        <meta charset="UTF-8">
+        <style>
+            div.container{
+		        width: 90vw;
+		        height: auto;
+	        }
+            h3{
+                text-align: center;
+                color: rgb(194, 131, 194);
+            }
+	        div.calc{       
+		        margin: 10% 30% 30% 30%;
+		        padding: 100px;
+		        background-color: lightGrey;
+                position: relative;
+	        }
+        </style>
+        <script language="javascript">
+        function checkVal(left, right){
+            if (left >= 0 && right >= 0)
+                return true;
+            else
+                return false;
+        }
+
+        function calculate(){
+            event.preventDefault();
+            var l = Number(left.value);
+            var r = Number(right.value);
+            if (!checkVal(l, r)){
+                alert("Error :(");
+                return ;
+            }
+            switch (operator.value){
+                case "add":
+                    answer(l + r);
+                    break;
+                case "sub":
+                    answer(l - r);
+                    break ;
+                case "mult":
+                    answer(l * r);
+                    break ;
+                case "div":
+                    if (r == 0)
+                        alert("It’s over 9000!");
+                    else
+                        answer(l / r);
+                    break ;
+                case "mod":
+                    if (r == 0)
+                        alert("It’s over 9000!");
+                    else
+                        answer(l % r);
+                    break ;
+            }
+        }
+
+        function sendAlert(){
+            alert("Please, use me...");
+        }
+
+        function answer(res){
+            alert(res);
+            console.log(res);
+        }
+
+        window.onload = function(){
+            var left = document.getElementById("left");
+            var right = document.getElementById("right");
+            var button = document.getElementById("button");
+            var operator = document.getElementById("operator");
+            button.addEventListener("click", calculate);
+            window.setInterval(sendAlert, 30000);
+        }
+    </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="calc" id="calc">
+                <h3>Let's do the math</h3>
+                    <input type="text" id="left" value="">
+                    <select id="operator">
+                        <option value="add">+</option>
+                        <option value="sub">-</option>
+                        <option value="mult">*</option>
+                        <option value="div">/</option>
+                        <option value="mod">%</option>
+                    </select>
+                    <input type="text" id="right" value="">
+                    <input type="button" id="button" value="Try me!">          
+            </div>
+        </div>
+    </body>
+</html>

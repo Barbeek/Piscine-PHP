@@ -1,0 +1,85 @@
+body{
+    background-color: bisque;
+}
+
+.nav ul{
+    margin: 0px;
+    padding: 0px;
+    background-color:none;
+    list-style: none;
+}
+
+.nav a{
+    padding: 1em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.has-children{
+    position: relative;
+}
+.has-children #sand{
+    background-color: rgb(235, 187, 195);
+    color:black;
+}
+.has-children #soup{
+    background-color: rgb(245, 245, 157);
+    color: black;
+}
+.has-children #hot{
+    background-color: rgb(226, 165, 51);
+    color: black;
+}
+.has-children #dess{
+    background-color: rgb(182, 182, 245);
+    color: black;
+}
+.has-children:hover > .sous-menu{
+    display: flex;
+}
+.sous-menu {
+    display: none;
+    flex-flow: column wrap;
+    min-width: 108px;
+    position: absolute;
+}
+.sous-menu.is-active{
+    display: flex;
+}
+.sous-menu a{
+    text-align: left;
+    color: black;
+}
+.sous-menu #sand{
+    background-color: rgb(224, 194, 199);
+}
+.sous-menu #soup{
+    background-color: rgb(245, 245, 157);
+}
+.sous-menu #hot{
+    background-color: rgb(226, 165, 51);;
+}
+.sous-menu #dess{
+    background-color: rgb(182, 182, 245);
+}
+.sous-menu .sous-menu{
+    top: 0px;
+    left: 100%;
+}
+@media(max-width: 450px){
+    .sous-menu{
+        position:static;
+    }
+    .sous-menu a{
+        text-align: center;
+    }
+    .nav .menu{
+        flex-flow: column wrap;
+    }
+}
